@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Aleatoria</title>
+</head>
+<body>
+    <img id="randomImage" width="400" alt="Imagen aleatoria">
+    <script>
+        const images = [
+            "https://drive.google.com/file/d/1YvhXvnWtDO5ZbjPPRL_w6KPKyvFWah4Y/view?usp=share_link",
+            "https://drive.google.com/file/d/13w5DEJuqx9Ar6tVALS8Hq2dTBy5Jslhi/view?usp=share_link",
+            "https://drive.google.com/file/d/1GfYBLIA5iUYHKUjZ62GQt_-0059W0S65/view?usp=share_link",
+            "https://drive.google.com/file/d/1r2EyaODTWNGHywXxp9hGgdVtnHnyFtxI/view?usp=share_link",
+            "https://drive.google.com/file/d/19VejDAE_OlHnb3-W61Gd2Tm920C9j2AP/view?usp=share_link",
+            "https://drive.google.com/file/d/1HSxVqTpSBuHJMdjpyW-LWjsQ2Vt7uTk8/view?usp=share_link",
+            "https://drive.google.com/file/d/1C67ntjMHVneM39AeL572_Q_0mW0PGBD9/view?usp=share_link",
+            "https://drive.google.com/file/d/1zogEx63Q9ZGMRUKFYSrtHEsrLege8pyv/view?usp=share_link",
+            "https://drive.google.com/file/d/1_Zoo4o_ZiLF7_CUlElnzz1MB8u5X8d59/view?usp=share_link",
+            "https://drive.google.com/file/d/1BT6fuY3ngFllzy54kmvZGPgtkk44E2mh/view?usp=share_link",
+            "https://drive.google.com/file/d/1SZQWKYP0ybmfh1VKvvCeuIS_phIKVRfJ/view?usp=share_link",
+            
+            // Agrega hasta 20 imágenes
+        ];
+        
+        const randomIndex = Math.floor(Math.random() * images.length);
+        document.getElementById("randomImage").src = images[randomIndex];
+    </script>
+</body>
+</html>
